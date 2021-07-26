@@ -17,6 +17,7 @@
         <module>Eureka</module>
         <module>Gateway</module>
         <module>Business</module>
+        <module>Common</module>
     </modules>
 
     <properties>
