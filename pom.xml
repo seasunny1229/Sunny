@@ -18,6 +18,7 @@
         <module>Gateway</module>
         <module>Business</module>
         <module>Common</module>
+        <module>Resource</module>
     </modules>
 
     <properties>
