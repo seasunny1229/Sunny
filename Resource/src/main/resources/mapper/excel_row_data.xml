@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.seasunny.sunny.resource.mapper.ExcelRowDataMapper">
 
-    <insert id="insert" keyProperty="id" useGeneratedKeys="true" parameterType="ExcelRowDataModel">
-        insert into excel_row_Data(excel_name, sheet_name, content, created_time)
-        values(#{excelRowDataModel.excelName},)
+    <insert id="insertRow">
+        insert into excel_row_data(excel_name, sheet_name, created_time)
+        values(#{excel_name},#{sheet_name}, now())
     </insert>
 
     
