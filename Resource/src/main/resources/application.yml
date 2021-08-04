@@ -4,5 +4,11 @@ server:
     context-path: /resource
 
 spring:
+  druid:
+    url: jdbc:mysql://106.15.34.199:3306/sunny?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
   application:
     name: resource
+
+
