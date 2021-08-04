@@ -17,7 +17,7 @@ public class ExcelRowDataMapperTest {
 
     @Test
     public void insertRow() {
-        excelRowDataMapper.insertRow("abc","abcd");
-        log.info("finish");
+        int count = excelRowDataMapper.insertRow("abc","abcd");
+        log.info("finish: " + count);
     }
 }
