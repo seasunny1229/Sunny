@@ -52,6 +52,14 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- unit test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+            <version>4.13</version>
+        </dependency>
+
     </dependencies>
 
 </project>
