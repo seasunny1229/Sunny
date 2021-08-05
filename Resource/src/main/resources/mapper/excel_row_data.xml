@@ -6,7 +6,7 @@
 
     <insert id="insertRow">
         insert into excel_row_data(excel_name, sheet_name, created_time)
-        values(#{excel_name},#{sheet_name}, now())
+        values(#{excelRowData.excelName},#{excelRowData.sheetName}, now())
     </insert>
 
     

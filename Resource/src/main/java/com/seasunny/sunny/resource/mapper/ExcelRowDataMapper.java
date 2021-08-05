@@ -1,11 +1,12 @@
 package com.seasunny.sunny.resource.mapper;
 
+import com.seasunny.sunny.resource.model.ExcelRowDataModel;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface ExcelRowDataMapper {
 
-    int insertRow(@Param("excel_name") String excelName, @Param("sheet_name") String sheetName);
+    int insertRow(@Param("excelRowData") ExcelRowDataModel excelRowDataModel);
 
 }

@@ -1,5 +1,6 @@
 package com.seasunny.sunny.resource.mapper;
 
+import com.seasunny.sunny.resource.model.ExcelRowDataModel;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +18,10 @@ public class ExcelRowDataMapperTest {
 
     @Test
     public void insertRow() {
-        int count = excelRowDataMapper.insertRow("abc","abcd");
+        ExcelRowDataModel excelRowDataModel = new ExcelRowDataModel();
+        excelRowDataModel.setExcelName("abc");
+        excelRowDataModel.setSheetName("def");
+        int count = excelRowDataMapper.insertRow(excelRowDataModel);
         log.info("finish: " + count);
     }
 }
