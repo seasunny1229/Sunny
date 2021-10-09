@@ -19,6 +19,7 @@
         <module>Business</module>
         <module>Common</module>
         <module>Resource</module>
+        <module>Exercise</module>
     </modules>
 
     <properties>
